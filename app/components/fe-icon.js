@@ -1,0 +1,1 @@
+export { default } from 'ember-feather/components/fe-icon';
