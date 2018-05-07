@@ -8,7 +8,7 @@ import fallbackIfUndefined from '../utils/computed-fallback-if-undefined';
 export default Component.extend({
   layout,
   // tagName: '',
-  classNames: ['inline'],
+  classNames: ['fe-icon', 'inline'],
   positionalParams: 'icon',
 
   size: fallbackIfUndefined('24'),
@@ -17,10 +17,10 @@ export default Component.extend({
 
   // Lifecycle hooks
   init() {
-    this._super(...arguments);      
-    
+    this._super(...arguments);
+
     set(this, 'innerContent', icons[get(this, 'icon')]);
-  }  
+  }
 }).reopenClass({
   positionalParams: 'icon'
 })
